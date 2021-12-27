@@ -1,5 +1,4 @@
 class Team
-    
   # 初期化
   def initialize(name, win, lose, draw)
     @name = name
@@ -17,7 +16,7 @@ class Team
   
   # チームの成績を表示
   def show_team_result
-    puts "#{@name}の2020年の成績は #{@win}勝 #{@lose}敗 #{@draw}分、勝率は #{calc_win_rate(@win, @lose)}"
+    puts "#{@name} の2020年の成績は #{@win}勝 #{@lose}敗 #{@draw}分、勝率は #{calc_win_rate(@win, @lose)}です。"
   end
 end
 
