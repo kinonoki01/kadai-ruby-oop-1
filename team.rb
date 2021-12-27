@@ -9,9 +9,7 @@ class Team
   
   # チームの勝率計算
   def calc_win_rate(win, lose)
-    result = 0
-    result = win.to_f/(win + lose)
-    return result
+    win.to_f/(win + lose)
   end
   
   # チームの成績を表示
