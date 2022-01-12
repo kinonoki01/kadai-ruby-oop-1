@@ -8,13 +8,13 @@ class Team
   end
   
   # チームの勝率計算
-  def calc_win_rate(win, lose)
-    win.to_f/(win + lose)
+  def calc_win_rate
+    @win.to_f/(@win + @lose)
   end
   
   # チームの成績を表示
   def show_team_result
-    puts "#{@name} の2020年の成績は #{@win}勝 #{@lose}敗 #{@draw}分、勝率は #{calc_win_rate(@win, @lose)}です。"
+    puts "#{@name} の2020年の成績は #{@win}勝 #{@lose}敗 #{@draw}分、勝率は #{calc_win_rate}です。"
   end
 end
 
